@@ -1,0 +1,162 @@
+
+body{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: #EBEBEB;
+    background-position: top center;
+    background-image: url(logo/Logo\ Background.png);
+    
+   
+}
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+    color: aqua;
+}
+a{
+    text-decoration: none; 
+    color: black;
+    text-align: center;
+}
+.mybutton{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+.mob-wrapper{
+    display: none;
+}
+
+
+
+
+
+.header-container{
+    background-color: gray;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+
+.container{
+    
+    min-height: 500px;
+    max-width: 1024px;
+    margin:  0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 140px;
+    
+    
+}
+
+.col{
+    background-color: rgb(64, 171, 64);
+    width: 30%;
+    margin-bottom: 30px;
+}
+.col p{
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    color: white;
+    line-height: 1.25rem;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+
+
+/* tablet */
+@media (max-width: 768px){
+
+.col{
+    width: 47%;
+}
+
+.header-container{
+    
+    position: relative;
+    
+}
+.container{  
+    padding-top: 40px;
+    margin-bottom: 400px;
+    
+}
+nav{
+    display: none;
+}
+
+nav a{
+    display: block;
+}
+.logo{
+    
+    padding: 40px 0;
+}
+.mybutton{
+    margin-left: 0;
+}
+.mob-wrapper{
+    display: block;
+    padding-right: 30px;
+    
+}
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+.navbutton{
+    display: block;
+    background-color: beige;
+    padding: 15px 30px;
+    margin-left: -35px;
+    text-align: center;
+    
+}
+
+}
+
+
+/* phone */
+@media (max-width: 320px){
+
+.container{
+    margin-bottom: 50px;
+}
+
+.col{
+    width: 100%;
+}
+
+
+
+
+}
